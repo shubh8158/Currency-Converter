@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+        <div class="logo">My Currency Converter</div>
+      <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+        <h2>Choose a Currency to Convert</h2>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity</label> 
+            <input type="number" name="quantity" >
+            <label for="currency">Choose a Currency</label>
+            <select name="currency" >
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollars</option>
+                <option value="EURO">EURO</option>
+            </select>
+            <input type="submit" class="btn" value="Submit" />
+            <div class="result">
+                <h3>Coverted Values in different Currencies</h3>
+                <table>
+                    <!-- <caption>Coverted Currency Table</caption> -->
+                    <thead>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Code</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+            </table>
+            </div>
+            
+        </form>
+    </div>
+    <div class="footer">
+      <p>Copyright Reserved</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
